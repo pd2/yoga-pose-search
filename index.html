@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- 
+      This is an HTML comment
+      You can write text in a comment and the content won't be visible in the page
+    -->
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TGV23KY4ZF"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-TGV23KY4ZF');
+    </script>
+
+    <meta charset="utf-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <link rel="icon" href="https://cdn.glitch.global/3081e15a-f7a7-4067-95dc-5fac1505022c/yoga_wordsearch.png"  type="image/x-icon">
+    <link rel="manifest" href="/manifest.json" >
+
+    <!--
+      This is the page head - it contains info the browser uses
+      Like the title, which appears on the browser tab but not inside the page
+      Further down you'll see the content that displays in the page
+    -->
+    <title>Yoga pose search</title>
+
+    <!-- The website stylesheet -->
+    <link rel="stylesheet" href="/style.css" >
+
+    <!-- The website JavaScript file -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+    <script src="/script.js" defer></script>
+  </head>
+  
+  <body>
+    <h1>Yoga Pose Search</h1>
+    <p id="info"> 
+      Your challenge is to search for English names of the yoga poses (asanas) in this grid of letters.
+      <br> Click and drag to highlight words. 
+    </p>
+    <p id="status"> </p>
+    
+    <div class="puzzleWrap">
+    <div id="puzzle"></div>
+    
+    <span> Clues: </span>
+    <div id="words"></div>
+
+    <button id="solve">Give up</button>
+    <button id="newgame">New Game</button>
+    <div class="tooltip">
+      <button id="share" onclick="ShareIt()" onmouseout="outFunc()">
+      <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+      Share</button>
+    </div>
+
+    </div>
+    <p><br></p>
+    
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", function() {
+          navigator.serviceWorker
+            .register("/serviceWorker.js")
+            .then(res => console.log("service worker registered"))
+            .catch(err => console.log("service worker not registered", err))
+        })
+      }
+    </script>
+  
+  <footer>
+    <span style="white-space: nowrap"> &copy; 2023 <a href="https://www.pradeepd.com/hobbies/apps">Pradeep D</a>, <a href="https://www.iseek.page">iSeek</a>. Courtesy: Bill BunKat, WordFind</span>
+    <br> <a href="https://www.buymeacoffee.com/pradeepde">Buy me a coffee</a>
+  </footer>
+  
+  </body>
+
+</html>
