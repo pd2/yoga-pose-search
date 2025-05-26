@@ -1,7 +1,7 @@
 {
   "name": "Yoga Pose search",
   "short_name": "YogaPoseSearch",
-  "start_url": "https://yoga-pose-search.glitch.me/",
+  "start_url": "https://pd2.github.io/yoga-pose-search/",
   "icons": [
     {
       "src": "https://cdn.glitch.global/3081e15a-f7a7-4067-95dc-5fac1505022c/yoga_wordsearch.png",
