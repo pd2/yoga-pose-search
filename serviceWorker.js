@@ -2,9 +2,9 @@ const staticDev = "yoga_pose_search"
 const service_worker_version = "v1.4"
 const assets = [
   "/",
-  "/index.html",
-  "/style.css",
-  "/script.js"
+  "index.html",
+  "style.css",
+  "script.js"
 ]
 
 self.addEventListener("install", installEvent => {
