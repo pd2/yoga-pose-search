@@ -1231,7 +1231,7 @@ function shuffle(array) {
 
 function ShareIt() {
   
-  let linkURL = "https://pd2.github.io/yoga-pose-search/";
+  let linkURL = window.location.href;
   
   let copyText = `I solved #YogaPose search in a word grid game to learn about ${num_poses} aasanas in ${Math.round(elapsedTime/1000)} sec at ${linkURL}`;
   
