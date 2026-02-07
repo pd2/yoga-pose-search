@@ -1,5 +1,5 @@
 const staticDev = "yoga_pose_search"
-const service_worker_version = "v1.4"
+const service_worker_version = "v1.41"
 const assets = [
   "/",
   "index.html",
